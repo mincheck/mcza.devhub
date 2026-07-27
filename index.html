@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCZA DevHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">MCZA DEV<span class="logo-caret"></span>HUB</span>
+      </a>
+      <nav class="tabs">
+        <a href="index.html" class="tab" data-page="home">
+          <span class="tab-dot" style="--dot:#edece6"></span> Все
+        </a>
+        <a href="dsn.html" class="tab" data-page="dsn" data-cat="dsn">
+          <span class="tab-dot"></span> Дизайн
+        </a>
+        <a href="neuro.html" class="tab" data-page="neuro" data-cat="nrl">
+          <span class="tab-dot"></span> Нейросети
+        </a>
+        <a href="gen.html" class="tab" data-page="gen" data-cat="gen">
+          <span class="tab-dot"></span> Генераторы
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="hero-eyebrow">личная подборка инструментов</span>
+        <h1>Командный пункт<br>разработчика<span class="cursor">&nbsp;</span></h1>
+        <p>Сервисы, нейросети и генераторы, которыми пользуюсь каждый день — собраны в одном месте, чтобы не искать заново.</p>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="container overview-grid">
+
+        <a href="dsn.html" class="overview-card" data-cat="dsn">
+          <span class="code-stamp">DSN</span>
+          <span class="code">DSN · 01</span>
+          <h3>Дизайн</h3>
+          <p>Сайты с иконками, референсы, палитры и другие сервисы для дизайна.</p>
+          <span class="go">перейти
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+
+        <a href="neuro.html" class="overview-card" data-cat="nrl">
+          <span class="code-stamp">NRL</span>
+          <span class="code">NRL · 02</span>
+          <h3>Нейросети</h3>
+          <p>Список нейросетей с пометкой — нужен VPN для доступа или нет.</p>
+          <span class="go">перейти
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+
+        <a href="gen.html" class="overview-card" data-cat="gen">
+          <span class="code-stamp">GEN</span>
+          <span class="code">GEN · 03</span>
+          <h3>Генераторы</h3>
+          <p>Быстрый генератор ФИО и ников для тестовых данных и аккаунтов.</p>
+          <span class="go">перейти
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>dev.hub — личная подборка инструментов</p>
+      <p>обновлено вручную</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

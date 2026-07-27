@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Генераторы — DEV.HUB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="gen">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">MCZA DEV<span class="logo-caret"></span>HUB</span>
+      </a>
+      <nav class="tabs">
+        <a href="index.html" class="tab" data-page="home">
+          <span class="tab-dot" style="--dot:#edece6"></span> Все
+        </a>
+        <a href="dsn.html" class="tab" data-page="dsn" data-cat="dsn">
+          <span class="tab-dot"></span> Дизайн
+        </a>
+        <a href="neuro.html" class="tab" data-page="neuro" data-cat="nrl">
+          <span class="tab-dot"></span> Нейросети
+        </a>
+        <a href="gen.html" class="tab" data-page="gen" data-cat="gen">
+          <span class="tab-dot"></span> Генераторы
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head" style="--accent:var(--accent-gen);">
+      <div class="container">
+        <span class="code">GEN_</span>
+        <h1>Генераторы</h1>
+        <p>Случайное ФИО и ник в один клик — для тестовых аккаунтов и заполнения форм.</p>
+      </div>
+    </section>
+
+    <section class="gen-grid container">
+
+      <!-- ==== Генератор ФИО ==== -->
+      <div class="gen-panel" data-gen="fio">
+        <div class="gen-panel-head">
+          <h3>Генератор ФИО</h3>
+          <span class="code">GEN · FIO</span>
+        </div>
+
+        <div class="gen-options">
+          <button class="chip is-active" data-gender="male">Мужской</button>
+          <button class="chip" data-gender="female">Женский</button>
+        </div>
+
+        <div class="gen-result">
+          <span class="is-empty">нажмите «Сгенерировать»</span>
+          <button class="icon-btn" title="Скопировать" aria-label="Скопировать результат">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+          </button>
+        </div>
+
+        <button class="btn-primary">Сгенерировать ФИО</button>
+
+        <div class="gen-history">
+          <h4>История</h4>
+          <ul></ul>
+        </div>
+      </div>
+
+      <!-- ==== Генератор ников ==== -->
+      <div class="gen-panel" data-gen="nick">
+        <div class="gen-panel-head">
+          <h3>Генератор ников</h3>
+          <span class="code">GEN · NICK</span>
+        </div>
+
+        <div class="gen-options">
+          <button class="chip is-active" data-style="word_number">Слово+число</button>
+          <button class="chip" data-style="word_word">Слово+слово</button>
+          <button class="chip" data-style="underscored">со_знаком_"_"</button>
+        </div>
+
+        <div class="gen-result">
+          <span class="is-empty">нажмите «Сгенерировать»</span>
+          <button class="icon-btn" title="Скопировать" aria-label="Скопировать результат">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+          </button>
+        </div>
+
+        <button class="btn-primary">Сгенерировать ник</button>
+
+        <div class="gen-history">
+          <h4>История</h4>
+          <ul></ul>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>dev.hub — личная подборка инструментов</p>
+      <p>GEN · генераторы</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

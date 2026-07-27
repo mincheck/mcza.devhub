@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Нейросети — DEV.HUB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="neuro">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">MCZA DEV<span class="logo-caret"></span>HUB</span>
+      </a>
+      <nav class="tabs">
+        <a href="index.html" class="tab" data-page="home">
+          <span class="tab-dot" style="--dot:#edece6"></span> Все
+        </a>
+        <a href="dsn.html" class="tab" data-page="dsn" data-cat="dsn">
+          <span class="tab-dot"></span> Дизайн
+        </a>
+        <a href="neuro.html" class="tab" data-page="neuro" data-cat="nrl">
+          <span class="tab-dot"></span> Нейросети
+        </a>
+        <a href="gen.html" class="tab" data-page="gen" data-cat="gen">
+          <span class="tab-dot"></span> Генераторы
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head" style="--accent:var(--accent-nrl);">
+      <div class="container">
+        <span class="code">NRL_</span>
+        <h1>Нейросети</h1>
+        <p>Подборка нейросетей с пометкой доступа — нужен VPN или сервис работает без него.</p>
+
+        <div class="chips">
+          <button class="chip is-active" data-filter="all">Все</button>
+          <button class="chip" data-filter="novpn">Без VPN</button>
+          <button class="chip" data-filter="vpn">Нужен VPN</button>
+        </div>
+
+        <div class="search-row">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input type="text" data-search placeholder="Поиск сервисов…" autocomplete="off">
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid container" style="--accent:var(--accent-nrl);">
+
+      <!-- ==== Карточка (шаблон, без VPN) ==== -->
+      <article class="card" data-code="NRL" data-filter-item="novpn" style="--accent:var(--accent-nrl);">
+        <div class="card-top">
+          <div class="card-icon placeholder"></div>
+          <div class="card-tags"><span class="tag novpn">VPN</span></div>
+        </div>
+        <h3>ChatGPT</h3>
+        <p>Код, тексты, UX, идеи, помощь в разработке</p>
+        <a href="https://chatgpt.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- ==== Карточка (шаблон, нужен VPN) ==== -->
+      <article class="card" data-code="NRL" data-filter-item="vpn" style="--accent:var(--accent-nrl);">
+        <div class="card-top">
+          <div class="card-icon placeholder"></div>
+          <div class="card-tags"><span class="tag vpn">VPN</span></div>
+        </div>
+        <h3>Claude</h3>
+        <p>Анализ больших текстов, программирование, UX</p>
+        <a href="https://claude.ai/new" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="NRL" data-filter-item="novpn" style="--accent:var(--accent-nrl);">
+        <div class="card-top">
+          <div class="card-icon placeholder"></div>
+          <div class="card-tags"><span class="tag novpn">Без VPN</span></div>
+        </div>
+        <h3>Gemini</h3>
+        <p>Код, тексты, поиск идей, анализ</p>
+        <a href="https://gemini.google.com/?hl=ru" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="NRL" data-filter-item="vpn" style="--accent:var(--accent-nrl);">
+        <div class="card-top">
+          <div class="card-icon placeholder"></div>
+          <div class="card-tags"><span class="tag vpn">VPN</span></div>
+        </div>
+        <h3>Qwen Chat</h3>
+        <p>Код, тексты, переводы, анализ</p>
+        <a href="https://chat.qwen.ai/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="NRL" data-filter-item="novpn" style="--accent:var(--accent-nrl);">
+        <div class="card-top">
+          <div class="card-icon placeholder"></div>
+          <div class="card-tags"><span class="tag novpn">VPN</span></div>
+        </div>
+        <h3>Grok</h3>
+        <p>Ответы на вопросы, код, идеи</p>
+        <a href="https://grok.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="NRL" data-filter-item="vpn" style="--accent:var(--accent-nrl);">
+        <div class="card-top">
+          <div class="card-icon placeholder"></div>
+          <div class="card-tags"><span class="tag vpn">Без VPN</span></div>
+        </div>
+        <h3>Visily</h3>
+        <p>Прототипирование интерфейсов</p>
+        <a href="https://www.visily.ai/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="NRL" data-filter-item="vpn" style="--accent:var(--accent-nrl);">
+        <div class="card-top">
+          <div class="card-icon placeholder"></div>
+          <div class="card-tags"><span class="tag vpn">Без VPN</span></div>
+        </div>
+        <h3>Ideogram</h3>
+        <p>Логотипы, баннеры, изображения с текстом</p>
+        <a href="https://ideogram.ai/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                  <article class="card" data-code="NRL" data-filter-item="vpn" style="--accent:var(--accent-nrl);">
+        <div class="card-top">
+          <div class="card-icon placeholder"></div>
+          <div class="card-tags"><span class="tag vpn">Без VPN</span></div>
+        </div>
+        <h3>Suno</h3>
+        <p>Музыка</p>
+        <a href="https://suno.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+    </section>
+
+    <p class="no-results container" data-no-results>Ничего не найдено — попробуйте другой фильтр или запрос.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>dev.hub — личная подборка инструментов</p>
+      <p>NRL · нейросети</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

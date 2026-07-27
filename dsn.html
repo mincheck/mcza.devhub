@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дизайн — DEV.HUB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dsn">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">MCZA DEV<span class="logo-caret"></span>HUB</span>
+      </a>
+      <nav class="tabs">
+        <a href="index.html" class="tab" data-page="home">
+          <span class="tab-dot" style="--dot:#edece6"></span> Все
+        </a>
+        <a href="dsn.html" class="tab" data-page="dsn" data-cat="dsn">
+          <span class="tab-dot"></span> Дизайн
+        </a>
+        <a href="neuro.html" class="tab" data-page="neuro" data-cat="nrl">
+          <span class="tab-dot"></span> Нейросети
+        </a>
+        <a href="gen.html" class="tab" data-page="gen" data-cat="gen">
+          <span class="tab-dot"></span> Генераторы
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head" style="--accent:var(--accent-dsn);">
+      <div class="container">
+        <span class="code">DSN_</span>
+        <h1>Дизайн</h1>
+        <p>Сайты с иконками, референсы, палитры, шрифты и другие сервисы для дизайна. Иконку, название, описание и ссылку добавляю сам в каждую карточку.</p>
+
+        <div class="chips">
+          <button class="chip is-active" data-filter="all">Все</button>
+          <button class="chip" data-filter="icons">Иконки</button>
+          <button class="chip" data-filter="images">Изображения</button>
+          <button class="chip" data-filter="illustrations">Иллюстрации</button>
+          <button class="chip" data-filter="colors">Палитры</button>
+          <button class="chip" data-filter="fonts">Шрифты</button>
+          <button class="chip" data-filter="animation">Анимации</button>
+          <button class="chip" data-filter="components">Компоненты</button>
+          <button class="chip" data-filter="mockups">Мокапы</button>
+          <button class="chip" data-filter="3d">3D</button>
+          <button class="chip" data-filter="tools">Инструменты</button>
+          <button class="chip" data-filter="inspiration">Вдохновение</button>
+        </div>
+
+        <div class="search-row">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input type="text" data-search placeholder="Поиск сервисов…" autocomplete="off">
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid container" style="--accent:var(--accent-dsn);">
+
+      <!-- ==== Карточка (шаблон) ==== -->
+      <article class="card" data-code="DSN" data-filter-item="tools" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://static.vecteezy.com/system/resources/previews/065/386/871/non_2x/figma-logo-icon-figma-app-editable-transparent-background-premium-social-media-design-for-digital-download-free-png.png">
+          </div>
+        </div>
+        <h3>Figma</h3>
+        <p>Разработки макетов, интерфейсов, баннеров</p>
+        <a href="https://www.figma.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="DSN" data-filter-item="inspiration" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Pinterest.svg/960px-Pinterest.svg.png">
+          </div>
+        </div>
+        <h3>Pinterest</h3>
+        <p>Изображения, видео, gif, иконки, цветовыйе палитры, шрифты, вдохновление</p>
+        <a href="https://undraw.co/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="DSN" data-filter-item="icons" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="img/flaticon.png" alt="">
+          </div>
+        </div>
+        <h3>Flaticon</h3>
+        <p>Иконки с возмоностью редактировать цвет, вариативность и разрешение</p>
+        <a href="https://www.flaticon.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="DSN" data-filter-item="icons" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA_6NdKeXvZaK0fyq3IxgFINDgOp3elQx2YzJOVMFzeCtHxKwYTw0sqA&s=10" alt="">
+          </div>
+        </div>
+        <h3>Lucide</h3>
+        <p>Разные цвета и толщина иконок для React</p>
+        <a href="https://lucide.dev/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="DSN" data-filter-item="icons" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZo26bXZYL1ws52XR1v_AmbtVDPHg6xWtlYivwwLqBZxkLtkiByUOyee8&s=10" alt="">
+          </div>
+        </div>
+        <h3>Tabler Icons</h3>
+        <p>6000+ вариативных иконок в разных форматах и React</p>
+        <a href="https://tabler.io/icons" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="DSN" data-filter-item="icons" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://phosphoricons.com/favicon-512.png" alt="">
+          </div>
+        </div>
+        <h3>Phosphor </h3>
+        <p>9000+ вариативных иконок и React</p>
+        <a href="#" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="illustrations" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://d29pcubyxe0mqt.cloudfront.net/distribute/media/logo/99748bbb-8c6e-414e-a573-7ea259bd83ed.png" alt="">
+          </div>
+        </div>
+        <h3>unDraw </h3>
+        <p>Иллюстрации для сайта</p>
+        <a href="https://undraw.co/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="illustrations" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Storyset </h3>
+        <p>Иллюстрация для сайта с маскотами</p>
+        <a href="https://storyset.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="illustrations" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>ManyPixels </h3>
+        <p>20000+ иллюстраций с вариативностью</p>
+        <a href="https://www.manypixels.co/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="images" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb3ZnUKG-8bUvnqnfBWAt5Ejg-Bigj-vXMh9FqKkeDaA&s" alt="">
+          </div>
+        </div>
+        <h3>Unplash</h3>
+        <p>Бесплатные изображения</p>
+        <a href="https://unsplash.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="images" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://play-lh.googleusercontent.com/L7wTWCA8uxKBeflgs_t-bXx1gPXwkBo2AP08uqdQDfXcJRYIKkuq2ZVRa0yR5Nf2sLCUMTzGAd_rEtw4YGVUJg">
+          </div>
+        </div>
+        <h3>Pexels </h3>
+        <p>9000+ вариативных иконок и React</p>
+        <a href="https://www.pexels.com/ru-ru" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="images" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3291/3291694.png" alt="">
+          </div>
+        </div>
+        <h3>Pixabay </h3>
+        <p>1 млн бесплатных изображений, gif, видео, музыки, звуков, 3D моделей</p>
+        <a href="https://pixabay.com/ru/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card" data-code="DSN" data-filter-item="colors" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMpG84VGAW1e2PbULJ0dUg7VqcuixXTiKmhdarGUN1pxxDxsq12hIE9wn&s=10" alt="">
+          </div>
+        </div>
+        <h3>Coolors</h3>
+        <p>Генератор цветовых палитр</p>
+        <a href="https://coolors.co/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="colors" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="img/happy hues.png" alt="">
+          </div>
+        </div>
+        <h3>Happy Hues</h3>
+        <p>Цветовые плаитры с наглядным примером работы на сайте</p>
+        <a href="https://www.happyhues.co" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="colors" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          
+          </div>
+        </div>
+        <h3>uiGradient</h3>
+        <p>Библиотека градиентов</p>
+        <a href="https://uigradients.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="animation" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://paper.design/logos/app-icons/Paper%20App%20Icon%20512.png" alt="">
+          </div>
+        </div>
+        <h3>ShaderPaper</h3>
+        <p>Различные анимированные фоны для React</p>
+        <a href="https://shaders.paper.design/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="animation" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Colorflow</h3>
+        <p>Анимированные мэш фоны</p>
+        <a href="https://colorflow.ls.graphics/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                  <article class="card" data-code="DSN" data-filter-item="animation" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Hero Patterns</h3>
+        <p>Анимированные мэш фоны</p>
+        <a href="https://heropatterns.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+      
+
+            <article class="card" data-code="DSN" data-filter-item="fonts" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5E9bzaXykfBiH5EhSpR25aPqamd3ruzabowmyZSznvQ&s=10" alt="">
+          </div>
+        </div>
+        <h3>Google Fonts</h3>
+        <p>Гигансткая библиотека шрифтов</p>
+        <a href="https://fonts.google.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="fonts" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Fonts Online</h3>
+        <p>Библиотека шрифтов</p>
+        <a href="https://online-fonts.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="animation" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>HolaSVG</h3>
+        <p>Анимация лоадеров</p>
+        <a href="https://loaders.holasvg.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                  <article class="card" data-code="DSN" data-filter-item="tools" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>CSS Layout Generator</h3>
+        <p>Генератор шаблонов для каталогов и прочего</p>
+        <a href="https://layout.bradwoods.io/ы" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                  <article class="card" data-code="DSN" data-filter-item="components" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="img/blossom.png" alt="">
+          </div>
+        </div>
+        <h3>Blossom Corousel</h3>
+        <p>Готовые шаблоны слайдеров</p>
+        <a href="https://www.blossom-carousel.com/docs/examples/basic/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                  <article class="card" data-code="DSN" data-filter-item="animation" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon">
+            <img src="img/trans.png" alt="">
+          </div>
+        </div>
+        <h3>Transitions.dev</h3>
+        <p>Анимация лоадеров</p>
+        <a href="https://transitions.dev/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                        <article class="card" data-code="DSN" data-filter-item="components" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Splide</h3>
+        <p>Готовые шаблоны слайдеров</p>
+        <a href="https://splidejs.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                              <article class="card" data-code="DSN" data-filter-item="components" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Astryx</h3>
+        <p>Ui элементы для react</p>
+        <a href="https://astryx.atmeta.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                                    <article class="card" data-code="DSN" data-filter-item="components" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Canvasui</h3>
+        <p>Готовые UI элементы</p>
+        <a href="https://canvasui.dev/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                              <article class="card" data-code="DSN" data-filter-item="mockups" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Angle Mockups</h3>
+        <p>8500+ бесплатных мокапов</p>
+        <a href="https://angle.sh/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                        <article class="card" data-code="DSN" data-filter-item="mockups" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Mockup World</h3>
+        <p>Бесплатные мокапы</p>
+        <a href="https://www.mockupworld.co/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      
+                        <article class="card" data-code="DSN" data-filter-item="3d" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Spline</h3>
+        <p>Создание 3д моделей</p>
+        <a href="https://spline.design/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                        <article class="card" data-code="DSN" data-filter-item="3d" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Vectray</h3>
+        <p>Создание 3д моделей</p>
+        <a href="https://www.vectary.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                              <article class="card" data-code="DSN" data-filter-item="tools" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Squoosh</h3>
+        <p>Сжатие изображений</p>
+        <a href="https://www.mockupworld.co/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+      
+      <article class="card" data-code="DSN" data-filter-item="tools" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Carve Photos</h3>
+        <p>Обрезка фона</p>
+        <a href="https://carve.photos/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="inspiration" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Greatstuff</h3>
+        <p>Вдохновление</p>
+        <a href="https://greatstuff.fyi/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="inspiration" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>Best on X</h3>
+        <p>Вдохновление</p>
+        <a href="https://bestdesignsonx.com/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="inspiration" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>landig love</h3>
+        <p>Вдохновление для лендингов</p>
+        <a href="https://landing.love" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="inspiration" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>navbar gallery</h3>
+        <p>Вдохновление навбаров (хедеров)</p>
+        <a href="https://navbar.gallery/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+            <article class="card" data-code="DSN" data-filter-item="inspiration" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>СTA Gallery</h3>
+        <p>Вдохновление CTA</p>
+        <a href="https://www.cta.gallery/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+                  <article class="card" data-code="DSN" data-filter-item="inspiration" style="--accent:var(--accent-dsn);">
+        <div class="card-top">
+          <div class="card-icon placeholder">
+          </div>
+        </div>
+        <h3>component gallery</h3>
+        <p>Вдохновление компонентов</p>
+        <a href="https://component.gallery/" class="card-link" target="_blank" rel="noopener">
+          Перейти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+    </section>
+
+    <p class="no-results container" data-no-results>Ничего не найдено — попробуйте другой фильтр или запрос.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>dev.hub — личная подборка инструментов</p>
+      <p>DSN · дизайн</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
